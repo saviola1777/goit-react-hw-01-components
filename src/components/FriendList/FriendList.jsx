@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
-import css from 'components/FriendList/FriendList.module.css'
+ import css from 'components/FriendList/FriendList.module.css'
 import { FriendListItems } from 'components/FriendList/FrienListItems'
 export function FriendList({ friends }) { 
   return (
-    <ul className={css.friendList}>{FriendListItems(friends)}</ul>
+ <ul className={css.friendList}>{FriendListItems(friends)}</ul>
+   
   )
 }
 
@@ -16,3 +17,5 @@ isOnline: PropTypes.bool.isRequired
 })),
     
 };
+
+

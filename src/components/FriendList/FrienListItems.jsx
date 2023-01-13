@@ -1,10 +1,9 @@
 import css from 'components/FriendList/FriendList.module.css'
 import PropTypes from 'prop-types';
-
 export function FriendListItems( friends ) { 
   return (
   friends.map(({ avatar, name, isOnline, id }) => (
-     <li className={css.item} key={id}>
+      <li className={css.item} key={id}>
   <span className={isOnline?css.online:css.offline}></span>
   <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
   <p className={css.name}>{name}</p>
@@ -20,3 +19,5 @@ isOnline: PropTypes.bool.isRequired
 })),
     
 };
+
+
