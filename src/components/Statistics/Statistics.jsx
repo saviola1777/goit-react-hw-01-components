@@ -8,7 +8,7 @@ function getRandomHexColor() {
 export function Statistics({ title, stats }) { 
   return (
   <section className={css.statistics}>
-  <h2 className={css.title}>{title}</h2>
+     {title.length > 0 && <h2 className={css.title}>{title}</h2>}
   <ul className={css.list}>{ stats.map(({ id, label, percentage }) =>( 
 
     <li className={css.item} key={id} style={{ backgroundColor: getRandomHexColor() }}>
@@ -20,7 +20,6 @@ export function Statistics({ title, stats }) {
     </section>
     )
 }
-
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(PropTypes.shape({

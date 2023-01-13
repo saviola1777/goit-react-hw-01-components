@@ -1,16 +1,11 @@
 import PropTypes from 'prop-types';
 import css from 'components/FriendList/FriendList.module.css'
+import { FriendListItems } from 'components/FriendList/FrienListItems'
 export function FriendList({ friends }) { 
   return (
-  <ul className={css.friendList}>{friends.map(({ avatar, name, isOnline, id }) => (
-     <li className={css.item} key={id}>
-  <span className={isOnline?css.online:css.offline}></span>
-  <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
-  <p className={css.name}>{name}</p>
-       </li >
-))}
-      </ul>
-)}
+    <ul className={css.friendList}>{FriendListItems(friends)}</ul>
+  )
+}
 
 FriendList.propTypes = {
 friends: PropTypes.arrayOf(PropTypes.shape({
