@@ -1,18 +1,19 @@
 .friendList{
 display: grid;
-  grid-template-columns: 150px 150px 150px 150px 150px ;
+  grid-template-rows: 75px 75px 75px 75px 75px ;
   gap: 5px;
-  justify-content: center;
+  width: 400px;
+    margin: 0 auto;
 
 }
 .item{
-display: grid;
-  grid-template-columns: 20px 40px 90px;
-  gap: 3px;
-  height: 80px;
-  border-radius: 9px;
-    box-shadow: 2px 2px 8px #363636;
-    background-color: #e8f9f2;
+    display: grid;
+      grid-template-columns: 50px 100px 250px;
+      gap: 3px;
+      height: 75px;
+      border-radius: 9px;
+      box-shadow: 2px 2px 8px #363636;
+      background-color: #e8f9f2;
 }
 .online{
   border-radius: 50%;
