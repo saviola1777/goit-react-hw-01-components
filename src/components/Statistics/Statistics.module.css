@@ -1,0 +1,44 @@
+
+.statistics{
+  display: grid;
+  grid-template-rows: 60px 90px;
+    padding: 15px;
+    margin: 10px auto ;
+      max-width: 500px;
+    
+      border-radius: 9px;
+      box-shadow: 2px 2px 8px #363636;
+      background-color: #fbfae1;
+}
+.title{
+ 
+  
+  font-size: 24px;
+    font-weight: 700;
+   margin: auto;
+    color: #2e2e2e;
+    text-transform:uppercase;
+}
+.list{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+gap: 3px;
+}
+.item{
+display: grid;
+grid-template-rows: 40% 60%;
+/* background-color: rgb(190, 23, 109); */
+border-radius: 5px;
+
+}
+.label{
+  color: aliceblue;
+  margin: auto;
+  font-size: 20px;
+}
+.percentage{
+  color: aliceblue;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 700;
+}
