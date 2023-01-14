@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import { FriendListItems } from 'components/FriendList/FrienListItems'
 export function FriendList({ friends }) { 
   return (
- <ul className={css.friendList}>{FriendListItems(friends)}</ul>
-   
+ <ul className={css.friendList}> {friends.map(FriendListItems)}</ul>
   )
 }
 
